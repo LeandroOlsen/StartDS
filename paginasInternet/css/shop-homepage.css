@@ -44,7 +44,8 @@ body {
   width: 60px;
 }
 .navbar-default {
-  background: linear-gradient(to bottom, #337744, #11421a);
+  background: linear-gradient(to bottom, #4aac63, #337744);
+  border-radius: 20px;
 }
 .redesSociais{
   float: right;
@@ -58,18 +59,76 @@ body {
   text-align: center;
 }
 .navbar-brand{
-  width: 7%;
+  width: 30%;
 }
+.container-brand{
+  width: 30%;
+  padding-left: 20px;
+}
+#navbar-site{
+  width: 70%;
+  margin: auto;
+}
+.nav-item{
+  font-size: 18px;
+  font-family: cursive;
+} 
 .nav-icone{
   width: 5%;
 }
 #icons{
   float: left;
 }
-.container-form{
-  margin: 50px 120px 50px 120px;
+.dropdown-menu{
+  background: linear-gradient(to bottom, #337744, #11421a);
 }
-#textFooter{
+.container-header{
+  background-image: url(../imagens/novasimagens/3a.jpg);
+  width: 100%;
+  height: 400px;
+}
+.row-contact{
+  font-family: cursive;
+  color: #337744;
+}
+.row-contact-menu{
+  text-align: right;
+  margin: 0px 55px 0px 0px;
+  height: 10px;
+}
+#navbar-menu{
+  margin: 15px 55px 0px 55px;
+}
+.container-icons{
+  height: 150px;
+  text-align: center;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icons-products{
+  width: 13%;
+}
+.row-form{
+  margin: 20px 75px 0px 120px;
+}
+.carousel-box{
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-products{
+  font-family: cursive;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
   
 }
-
+.products{
+  margin: 40px 55px 40px 55px;
+  background: linear-gradient(to bottom, #4aac63, #337744);
+  border-radius: 20px;
+  height: 50px;
+}
