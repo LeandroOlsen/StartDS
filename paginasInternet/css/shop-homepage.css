@@ -5,7 +5,7 @@
  */
 
 body {
-  background-color: #8fbb1c;
+  background-color: #c2ffb3;
 }
 @media (min-width: 992px) {
   body {
@@ -36,8 +36,10 @@ body {
   width: 5%;
 }
 .card-title{
-  color: red;
+  color: #4aac63;
   text-align: center;
+  font-family: cursive;
+  size: 20px;
 }
 .nav-icone{
   height: 60px;
@@ -53,6 +55,9 @@ body {
 }
 .card-price{
   text-align: center;
+  font-family: cursive;
+  size: 20px;
+  color: tomato;
 }
 .card-text{
   font-size: 12px;
@@ -80,19 +85,25 @@ body {
   float: left;
 }
 .dropdown-menu{
-  background: linear-gradient(to bottom, #337744, #11421a);
+  background: #337744;
+}
+.dropdown-item{
+  color: white;
+}
+.buttons-entrar{
+  text-align: center;
 }
 .container-header{
-  background-image: url(../imagens/novasimagens/3a.jpg);
+  background-image: url(../imagens/novasimagens/3b.jpg);
   width: 100%;
   height: 400px;
 }
 .row-contact{
   font-family: cursive;
-  color: #337744;
+  color: white;
 }
 .row-contact-menu{
-  text-align: right;
+  text-align: center;
   margin: 0px 55px 0px 0px;
   height: 10px;
 }
@@ -110,7 +121,7 @@ body {
   width: 13%;
 }
 .row-form{
-  margin: 20px 75px 0px 120px;
+  margin: 20px 120px 0px 120px;
 }
 .carousel-box{
   margin-top: 40px;
@@ -122,13 +133,29 @@ body {
   font-size: 30px;
   color: white;
   text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  
+  padding-top: 5px;
 }
 .products{
   margin: 40px 55px 40px 55px;
   background: linear-gradient(to bottom, #4aac63, #337744);
   border-radius: 20px;
   height: 50px;
+}
+.container-form{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-group{
+  margin-left: auto;
+  margin-right: auto;
+}
+.creditcards{
+  float: left;
+}
+.socialmedias{
+  float: right;
+}
+.footer{
+  background: linear-gradient(to bottom, #4aac63, #337744);
 }

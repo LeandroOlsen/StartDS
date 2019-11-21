@@ -29,54 +29,66 @@
     </head>
     <body>
     <!--Início da barra de navegação-->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-default">
-            <div class="container">
-                <img src="imagens/logosemfundo.png" class="navbar-brand">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSite">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Sobre Nós</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Missão</a>
-                                <a class="dropdown-item" href="#">Visão</a>
-                                <a class="dropdown-item" href="#">Valores</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Vagas</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ofertas do Dia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Meu Carrinho</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">Entre</a>
-                            <div class="dropdown-menu dropdown-menu-right" style="background-color: rgb(143, 248, 116);">
-                                <form>
-                                    <input class="my-2 mx-4" type="email" placeholder="E-mail"/>
-                                    <input class="my-2 mx-4" type="password" placeholder="Senha"/>
-                                    <button class="btm btn-outline-success my-2 mx-2" type="submit">Entrar</button><br/>
-                                </form>
-                            <button type="button" href="#">Cadastre-se</a>
-                            </div>
-                        </li>
-                    </ul>           
-                </div>
-            </div>
-        </nav>
+</head>
+<body>
+  <header id="header" id="home">
+      <div class="container-header-cadastro">
+          <div class="row-contact-menu">
+              <a class="row-contact col-lg-3" href="">Vagas</a>
+              <a class="row-contact col-lg-6" href="#">+55 16 9 9999 9999</a>
+              <a class="row-contact col-lg-9" href="">vegetal@nossoemail.com</a>
+          </div>
+          <div class="row align-items-center justify-content-between d-flex" id="navbar-menu">
+              <nav class="navbar navbar-expand-lg navbar-dark navbar-default">
+                  <div class="container-brand">
+                  <img src="imagens/logotipo.png" class="navbar-brand" href="#">
+                  </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSite">
+                      <ul class="navbar-nav align-items-right">
+                          <li class="nav-item dropdown mx-3">
+                              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Sobre Nós</a>
+                              <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Missão</a>
+                              <a class="dropdown-item" href="#">Visão</a>
+                              <a class="dropdown-item" href="#">Valores</a>
+                              </div>
+                          </li>
+                          <li class="nav-item mx-3">
+                              <a class="nav-link" href="#">Contato</a>
+                          </li>
+                          <li class="nav-item mx-3">
+                              <a class="nav-link" href="#">Vagas</a>
+                          </li>
+                          <li class="nav-item mx-3">
+                              <a class="nav-link" href="#">Ofertas do Dia</a>
+                          </li>
+                          <li class="nav-item mx-3">
+                              <a class="nav-link" href="#">Meu Carrinho</a>
+                          </li>
+                          <li class="nav-item dropdown mx-3">
+                              <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">Entre</a>
+                              <div class="dropdown-menu dropdown-menu-right" style="background-color: rgb(143, 248, 116);">
+                                  <form>
+                                      <input class="my-2 mx-4" type="email" placeholder="E-mail"/>
+                                      <input class="my-2 mx-4" type="password" placeholder="Senha"/>
+                                      <button class="btm btn-outline-success my-2 mx-2" type="submit">Entrar</button><br/>
+                                  </form>
+                                  <a class="btn btn-success" role="button" href="cadastro.html">Cadastre-se</a>
+                              </div> <!--dropdown-menu-->
+                          </li>
+                      </ul>           
+                  </div> <!--navbar-site-->
+              </nav>
+          </div> <!--navbar-menu-->
         <!--Fim da barra de navegação-->
-        <div class="container-form">
+
+        <!--Início do Formulário-->
+        <div class="container">
              <form>
+                 <div class="container-form">
                 <div class="row">
                     <div class="col-lg-12 col-md-6 mb-4">
                         <div class="form-group">
@@ -166,23 +178,26 @@
                     </div>
                 </div>
                 <div class="row">
-                    <button class="btn btn-success" type="submit">Cadastrar</button>
+                    <div class="form-group">
+                        <button class="btn btn-success" type="submit">Cadastrar</button>
+                    </div>
                 </div>
+            </div>
             </form>
         </div>
         
         
 <!-- Footer -->
-<footer class="py-5 navbar-default">
+<footer class="py-5 footer">
     <div class="container">
         <p class="m-0 text-center text-white">Veg & Tal</p>
-        <div class="row">
-            <h6 id="textFooter" class="m-2 text-white">Formas de Pagamento</h6>
-            <h6 id="textFooter" class="mr-2 text-white">Redes sociais e app</h6>
+        <div class="row my-2">
+            <h6 id="textFooter-payway" class="text-white mr-auto">Formas de Pagamento</h6>
+            <h6 id="textFooter-socialmedias" class="text-white ml-auto">Redes sociais e app</h6>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 col-md-6 mb-4 float-left">
+        <div class="col-lg-6 col-md-6 mb-4 creditcards">
             <!--Redimensionar as imagens-->
             <img class="img-cartao ml-2 mr-1" src="imagens/mastercard.png">
             <img class="img-cartao m-1" src="imagens/visa.png">
@@ -190,7 +205,7 @@
             <img class="img-cartao m-1" src="imagens/americanexpress.png">
             <img class="img-cartao m-1" src="imagens/dinersclub.jpg">
         </div>
-        <div class="col-lg-6 col-md-6 mb-4 float-right">
+        <div class="col-lg-6 col-md-6 mb-4 socialmedias">
             <!--Enviar para a direita esses ícones-->
             <img class="redesSociais mr-2" src="imagens/appstore.png">
             <img class="redesSociais mr-2" src="imagens/playstore.jpg">
