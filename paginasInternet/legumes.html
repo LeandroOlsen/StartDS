@@ -34,16 +34,18 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #337744">-->
       <!--navbar-expand-lg: tamanho grande expandido, outros tamanhos são recolhidos; navbar-dark: cor do texto; fixed-top: não rola com o conteúdo do site-->
       <div class="container">
-        <a class="navbar-brand" href="#">LOGO</a>
-        <!--navbar-brand: destaque à esquerda da barra igual o B do bootstrap-->
+        <div class="container-brand">
+            <a  href="index.html"><img src="imagens/logotipo.png"class="brand">
+            </a>
+          <!--navbar-brand: destaque à esquerda da barra igual o B do bootstrap-->
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
           <span class="navbar-toggler-icon"></span>
-        </button>
         <!--botão para recolher a barra; data-target: expandir a div e o id vai indicar o que ficará dentro quando expandir a barra; navbar-toggler-icon: ícone para clicar-->
         </button>
         <div class="collapse navbar-collapse" id="navbarSite">
         <!--#navbarSite: data-target-->
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
           <!--ml-auto: alinha para left; mr-auto: alinha para right-->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Sobre Nós</a>
@@ -59,8 +61,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Vagas</a>
             </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">Ofertas do Dia</a>
             </li>
@@ -71,23 +71,11 @@
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">Entre</a>
                   <div class="dropdown-menu dropdown-menu-right" background-color>
                     <form>
-                      
                       <input class="my-2 mx-4" type="email" placeholder="E-mail"/>
                       <input class="my-2 mx-4" type="password" placeholder="Senha"/>
-                      <button class="btm btn-outline-success my-2 mx-2" type="submit">Entrar</button><br/>
-                      <!--<br/><input type="radio" name="sexo" value="masculino">Masculino<br/>
-                      <input type="radio" name="sexo" value="feminino"/>Feminino<br/>
-                      <input type="checkbox" name="a" value="1"/>1<br/>
-                      <input type="checkbox" name="a" value="2"/>2<br/>
-                      <input type="checkbox" name="a" value="3"/>3<br/>
-                      type password fica com asteriscos
-                      size em pixels, tamanho do campo
-                      maxlength é a quantidade de caracteres que pode digitar
-                      <input type="submit" name="" value="">Submit
-                      <input type="reset" name="" value="">Reset
-                      -->
+                      <button class="btn btn-success my-2 mx-2" type="submit">Entrar</button><br/>
                     </form>
-                    <button type="button" href="#">Cadastre-se</a>
+                    <a class="btn btn-success" role="button" href="cadastro.html">Cadastre-se</a>
                   </div>
             </li>
           </ul>           
@@ -96,36 +84,36 @@
     </nav>
     <!--Fim da barra de navegação-->
 
-    <!--Início da barra de navegação que tem a pesquisa-->
+    <!--Início da barra de navegação e pesquisa-->
     <div class="container-navbar-pesquisa my-4 mx-4">
       <nav id="barraPesquisa" class="navbar navbar-dark" style="background-color: #337744">
-        <!--Ícones provisórios, criar-->
         <a class="nav-item">
-          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/frutas.png" alt="">
+          <a class="nav-icone" href="frutas.html"><img class="card-img-top" src="imagens/miniaturas/frutasminiatura.png" alt="">
         </a>
         <a class="nav-item">
-            <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/icone.png" alt="">Verduras
+          <a class="nav-icone" href="hortaliça.html"><img class="card-img-top" src="imagens/miniaturas/verdurasminiatura.png" alt="">
         </a>
         <a class="nav-item">
-          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/legumesminiatura.png" alt="">
+          <a class="nav-icone" href="legumes.html"><img class="card-img-top" src="imagens/miniaturas/legumesminiatura.png" alt="">
         </a>
         <a class="nav-item">
-          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/granja.png" alt="">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/miniaturas/graosminiatura.png" alt="">
         </a>
         <a class="nav-item">
-          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/graos.png" alt="">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/miniaturas/temperosminiatura.png" alt="">
         </a>
         <a class="nav-item">
-          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/temperos.png" alt="">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/miniaturas/granjaminiatura.png" alt="">
         </a>
+
         <form class="form-inline">
-          <input class="form-control my-2 my-sm-2"type="search" aria-label="Pesquisar">
-          <button class="btn btn-outline-success my-2 mx-2 my-sm-0" type="submit">Pesquisar</button>
-          <!--value placeholder="" aumentar e diminui a barra de pesquisa?-->
+          <input class="form-control my-2 my-sm-2" type="search" aria-label="Pesquisar">
+          <button class="btn btn-success my-2 mx-2 my-sm-2" type="submit">Pesquisar</button>
         </form>
       </nav>
     </div>
-    <!--Fim da barra de navegação que tem a pesquisa-->
+      <!--Fim da barra de navegação e pesquisa-->
+
     <!--Início do carrossel-->
   <!--Início dos cards-->
   <div class="container">
@@ -138,13 +126,11 @@
               <a href="#">Abobrinha</a>
             </h4>
             <p class="card-text text-muted">É anti-inflamatória, antioxidante, rica em vitamina C alem de regular o açúcar no sangue.</p>
-            <h2>R$3.99 Kg</h2>
-            <!--Escolher botões, o primeiro eu copiei de um site, mas ainda não funciona-->
-            <input class="btn btn-success button product-quantity-increement" type="button" value="-" onclick="quantity_dec($(this).parent() )">
-            <input type="text" name="quantity" value="1" size="1" class="product-quantity" style="height: 28px">
-            <input class="btn btn-success button product-quantity-decrement" type="button" value="+" onclick="quantity_inc($(this).parent() )">
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <h2 class="card-price">RR$3,99 Kg</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -156,10 +142,12 @@
             <h4 class="card-title">
               <a href="#">Aspargo</a>
             </h4>
-            <p class="card-text">Ajudar a combater problemas de vesículas e rins, por ter ação diurética. Preveni o câncer, pois tem antioxidantes como vitamina A e E.</p>
-            <h2>R$2.99</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <p class="card-text text-muted">Ajudar a combater problemas de vesículas e rins, por ter ação diurética. Preveni o câncer, pois tem antioxidantes como vitamina A e E.</p>
+            <h2 class="card-price">RR$2,99</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -171,10 +159,12 @@
             <h4 class="card-title">
               <a href="#">Batata Inglesa</a>
             </h4>
-            <p class="card-text">Fontes de vitaminas B e C e carboidratos. Tem alto índice glicêmico, ou seja, é processada mais rapidamente e aumenta os níveis de insulina e glicose.</p>
-            <h2>R$5.99</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <p class="card-text text-muted">Fontes de vitaminas B e C e carboidratos. Tem alto índice glicêmico, ou seja, é processada mais rapidamente e aumenta os níveis de insulina e glicose.</p>
+            <h2 class="card-price">RR$5,99</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -186,10 +176,12 @@
             <h4 class="card-title">
               <a href="#">Batata Doce</a>
             </h4>
-            <p class="card-text">Auxilia no ganho de massa muscular, ajuda a emagrecer, desintoxica o organismo, diminui o colesterol, entre outros beneficios.</p>
-            <h2>$2.99</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <p class="card-text text-muted">Auxilia no ganho de massa muscular, ajuda a emagrecer, desintoxica o organismo, diminui o colesterol, entre outros beneficios.</p>
+            <h2 class="card-price">R$2,99</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -201,10 +193,12 @@
             <h4 class="card-title">
               <a href="#">Berinjela</a>
             </h4>
-            <p class="card-text">A berinjela é rica em antioxidantes e em vitaminas do complexo B.</p>
-            <h2>$2.59</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <p class="card-text text-muted">A berinjela é rica em antioxidantes e em vitaminas do complexo B.</p>
+            <h2 class="card-price">R$2,59</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -216,10 +210,12 @@
             <h4 class="card-title">
               <a href="#">Beterraba</a>
             </h4>
-            <p class="card-text">Rica em proteína, fósforo, vitamina B6, magnésio, potássio, entre outros beneficios.</p>
-            <h2>$4.29</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <p class="card-text text-muted">Rica em proteína, fósforo, vitamina B6, magnésio, potássio, entre outros beneficios.</p>
+            <h2 class="card-price">R$4,29</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -231,10 +227,12 @@
             <h4 class="card-title">
               <a href="#">Cebola</a>
             </h4>
-            <p class="card-text">Ajuda no emagrecimento, melhora a saúde da pele, tem poder anti-inflamatório e combate a hipertensão</p>
-            <h2>$2.79</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <p class="card-text text-muted">Ajuda no emagrecimento, melhora a saúde da pele, tem poder anti-inflamatório e combate a hipertensão</p>
+            <h2 class="card-price">R$2,79</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -246,10 +244,12 @@
             <h4 class="card-title">
               <a href="#">Cenoura</a>
             </h4>
-            <p class="card-text">Fonte de fibras, minerais como fósforo, potássio, cálcio e sódio e vitamina A, vitamina B2, vitamina B3 e vitamina C.</p>
-            <h2>$1.99</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <p class="card-text text-muted">Fonte de fibras, minerais como fósforo, potássio, cálcio e sódio e vitamina A, vitamina B2, vitamina B3 e vitamina C.</p>
+            <h2 class="card-price">R$1,99</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -261,10 +261,12 @@
           <h4 class="card-title">
             <a href="#">Chuchu</a>
           </h4>
-          <p class="card-text">O chuchu tem boas quantidades de ferro e de vitamina B2, cujas deficiências no corpo estão associadas a casos de anemia. </p>
-          <h2>$3,29</h2>
-          <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-          <button class="botao">Adicionar ao carrinho</button>
+          <p class="card-text text-muted">O chuchu tem boas quantidades de ferro e de vitamina B2, cujas deficiências no corpo estão associadas a casos de anemia. </p>
+          <h2 class="card-price">R$3,29</h2>
+          <div class="card-buttons">
+            <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+            <button class="botao my-2">Adicionar ao carrinho</button>
+          </div>
         </div>
       </div>
     </div>
@@ -276,10 +278,12 @@
         <h4 class="card-title">
           <a href="#">Jiló</a>
         </h4>
-        <p class="card-text">Por ajudar a regular a pressão arterial, o jiló é um aliado do coração, além de ser rico em potássio, o alimento também possui vitamina B1, a tiamina, que ajuda no bom funcionamento do órgão.</p>
-        <h2>$2.49</h2>
-        <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-        <button class="botao">Adicionar ao carrinho</button>
+        <p class="card-text text-muted">Por ajudar a regular a pressão arterial, o jiló é um aliado do coração, além de ser rico em potássio, o alimento também possui vitamina B1, a tiamina, que ajuda no bom funcionamento do órgão.</p>
+        <h2 class="card-price">R$2,49</h2>
+        <div class="card-buttons">
+          <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+          <button class="botao my-2">Adicionar ao carrinho</button>
+        </div>
       </div>
     </div>
   </div>
@@ -291,10 +295,12 @@
       <h4 class="card-title">
         <a href="#">Mandioca</a>
       </h4>
-      <p class="card-text">Melhora a digestão, é benéfica para a saúde cardiovascular e fortalece o sistema imunológico.</p>
-      <h2>$3.19</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <p class="card-text text-muted">Melhora a digestão, é benéfica para a saúde cardiovascular e fortalece o sistema imunológico.</p>
+      <h2 class="card-price">R$3,19</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -306,10 +312,12 @@
       <h4 class="card-title">
         <a href="#">Mandioquinha</a>
       </h4>
-      <p class="card-text">Tem maior quantidade de minerais que a batata-doce e a batata-inglesa.</p>
-      <h2>$3.09</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <p class="card-text text-muted">Tem maior quantidade de minerais que a batata-doce e a batata-inglesa.</p>
+      <h2 class="card-price">R$3,09</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -321,10 +329,12 @@
       <h4 class="card-title">
         <a href="#">Milho</a>
       </h4>
-      <p class="card-text">Protege a visão e melhora o intestino por ser rico nos antioxidantes luteína e zeaxantina.</p>
-      <h2>$2.39</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <p class="card-text text-muted">Protege a visão e melhora o intestino por ser rico nos antioxidantes luteína e zeaxantina.</p>
+      <h2 class="card-price">R$2,39</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -336,10 +346,12 @@
       <h4 class="card-title">
         <a href="#">Moranga</a>
       </h4>
-      <p class="card-text">O fruto que é tão rico em sabor, é igualmente rico em nutrientes que beneficiam nosso organismo. Ele é boa fonte de betacaroteno, vitamina C e vitamina E-que têm propriedades antioxidantes-e de vitaminas do complexo B.</p>
-      <h2>$2.89</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <p class="card-text text-muted">O fruto que é tão rico em sabor, é igualmente rico em nutrientes que beneficiam nosso organismo. Ele é boa fonte de betacaroteno, vitamina C e vitamina E-que têm propriedades antioxidantes-e de vitaminas do complexo B.</p>
+      <h2 class="card-price">R$2,89</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -351,10 +363,12 @@
       <h4 class="card-title">
         <a href="#">Nabo</a>
       </h4>
-      <p class="card-text">A raiz é rica em vitamina C e fibras. As folhas são ricas em fitonutrientes que estimulam a ação antioxidante do nabo, protegem as células e combatem os radicais livres. </p>
-      <h2>$1.79</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <p class="card-text text-muted">A raiz é rica em vitamina C e fibras. As folhas são ricas em fitonutrientes que estimulam a ação antioxidante do nabo, protegem as células e combatem os radicais livres. </p>
+      <h2 class="card-price">R$1,79</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -366,10 +380,12 @@
       <h4 class="card-title">
         <a href="#">Pepino</a>
       </h4>
-      <p class="card-text">Melhora a contração e saúde muscular, por conter potássio e magnésio.</p>
-      <h2>$1.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <p class="card-text text-muted">Melhora a contração e saúde muscular, por conter potássio e magnésio.</p>
+      <h2 class="card-price">R$1,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -381,10 +397,12 @@
       <h4 class="card-title">
         <a href="#">Pepino Caipira</a>
       </h4>
-      <p class="card-text">Melhora a contração e saúde muscular, por conter potássio e magnésio</p>
-      <h2>$1.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <p class="card-text text-muted">Melhora a contração e saúde muscular, por conter potássio e magnésio</p>
+      <h2 class="card-price">R$1,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -397,10 +415,12 @@
       <h4 class="card-title">
         <a href="#">Quiabo</a>
       </h4>
-      <p class="card-text">Controlar os níveis de açúcar no sangue, devido ao seu baixo teor de carboidratos e alta presença de fibras.</p>
-      <h2>$0.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <p class="card-text text-muted">Controlar os níveis de açúcar no sangue, devido ao seu baixo teor de carboidratos e alta presença de fibras.</p>
+      <h2 class="card-price">R$0,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -412,38 +432,49 @@
       <h4 class="card-title">
         <a href="#">Rabanete</a>
       </h4>
-      <p class="card-text">São excelentes fontes de nutrientes, tais como antioxidantes, que beneficiam o sistema imune, impedindo a ação dos radicais livres no organismo; fibras alimentares, que auxiliam o nosso sistema digestivo, além de vitamina C.</p>
-      <h2>$1.89</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <p class="card-text text-muted">São excelentes fontes de nutrientes, tais como antioxidantes, que beneficiam o sistema imune, impedindo a ação dos radicais livres no organismo; fibras alimentares, que auxiliam o nosso sistema digestivo, além de vitamina C.</p>
+      <h2 class="card-price">R$1,89</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
-
-    <!-- /.row -->  
-  
-  <!-- /.container -->
+</div>
+</div>
 
 <!-- Footer -->
-<footer class="py-5 navbar-default">
-<div class="container">
-  <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-  <h6 class="m-2 text-white">Formas de Pagamento</h6>
-  <h6 class="mr-2 text-right text-white">Redes sociais e app</h6>
-  <!--Redimensionar as imagens-->
-  <img class="img-cartao ml-2 mr-1" src="imagens/mastercard.png">
-  <img class="img-cartao m-1" src="imagens/visa.png">
-  <img class="img-cartao m-1" src="imagens/elo.png">
-  <img class="img-cartao m-1" src="imagens/americanexpress.png">
-  <img class="img-cartao m-1" src="imagens/dinersclub.jpg">
-  <!--Enviar para a direita esses ícones-->
-  <img class="redesSociais mr-2" src="imagens/appstore2.png">
-  <img class="redesSociais mr-2" src="imagens/playstore.jpg">
-  <img class="redesSociais mr-2" src="imagens/instagram.png">
-  <img class="redesSociais mr-2" src="imagens/facebook.png">
+<footer class="py-5 footer">
+    <div class="container">
+        <p class="m-0 text-center text-white" id="text-footer">Veg e tal &copy; 2019</p>
+        <div class="row my-2">
+            <h6 id="text-footer" class="text-white mr-auto">Formas de Pagamento</h6>
+            <h6 id="text-footer" class="text-white ml-auto">Redes sociais e app</h6>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 mb-4 creditcards">
+                <img class="img-cartao ml-2 mr-1" src="imagens/cartoesredessociais/visa.png">
+                <img class="img-cartao m-1" src="imagens/cartoesredessociais/mastercard.png">
+                <img class="img-cartao m-1" src="imagens/cartoesredessociais/americanexpress.png">
+                <img class="img-cartao m-1" src="imagens/cartoesredessociais/dinersclub.jpg">
+                <img class="img-cartao m-1" src="imagens/cartoesredessociais/elo.png">                
+            </div>
 
-</div>
-<!-- /.container -->
+                
+            <div class="col-lg-3 col-md-6 mb-4 security">
+                <img class="siteblindado" src="imagens/cartoesredessociais/siteblindado.png">
+            </div>   
+
+
+            <div class="col-lg-3 col-md-3 mb-4 socialmedias">
+                <!--Enviar para a direita esses ícones-->
+                <img class="redesSociais mr-2" src="imagens/cartoesredessociais/instagram.png">
+                <img class="redesSociais mr-2" src="imagens/cartoesredessociais/facebook.png">
+                <img class="redesSociais mr-2" src="imagens/instagram.png">
+                <img class="redesSociais mr-2" src="imagens/facebook.png">
+            </div>
+        </div>
 </footer>
 
     <!-- Bootstrap core JavaScript -->

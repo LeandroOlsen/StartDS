@@ -30,20 +30,19 @@
   <body>
     <!--Início da barra de navegação-->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-default">
-    <!--
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #337744">-->
-      <!--navbar-expand-lg: tamanho grande expandido, outros tamanhos são recolhidos; navbar-dark: cor do texto; fixed-top: não rola com o conteúdo do site-->
       <div class="container">
-        <a class="navbar-brand" href="#">LOGO</a>
-        <!--navbar-brand: destaque à esquerda da barra igual o B do bootstrap-->
+        <div class="container-brand">
+          <a  href="index.html"><img src="imagens/logotipo.png"class="brand">
+          </a>
+          <!--navbar-brand: destaque à esquerda da barra igual o B do bootstrap-->
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
           <span class="navbar-toggler-icon"></span>
-        </button>
         <!--botão para recolher a barra; data-target: expandir a div e o id vai indicar o que ficará dentro quando expandir a barra; navbar-toggler-icon: ícone para clicar-->
         </button>
         <div class="collapse navbar-collapse" id="navbarSite">
         <!--#navbarSite: data-target-->
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
           <!--ml-auto: alinha para left; mr-auto: alinha para right-->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Sobre Nós</a>
@@ -59,8 +58,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Vagas</a>
             </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">Ofertas do Dia</a>
             </li>
@@ -71,23 +68,11 @@
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">Entre</a>
                   <div class="dropdown-menu dropdown-menu-right" background-color>
                     <form>
-                      
                       <input class="my-2 mx-4" type="email" placeholder="E-mail"/>
                       <input class="my-2 mx-4" type="password" placeholder="Senha"/>
-                      <button class="btm btn-outline-success my-2 mx-2" type="submit">Entrar</button><br/>
-                      <!--<br/><input type="radio" name="sexo" value="masculino">Masculino<br/>
-                      <input type="radio" name="sexo" value="feminino"/>Feminino<br/>
-                      <input type="checkbox" name="a" value="1"/>1<br/>
-                      <input type="checkbox" name="a" value="2"/>2<br/>
-                      <input type="checkbox" name="a" value="3"/>3<br/>
-                      type password fica com asteriscos
-                      size em pixels, tamanho do campo
-                      maxlength é a quantidade de caracteres que pode digitar
-                      <input type="submit" name="" value="">Submit
-                      <input type="reset" name="" value="">Reset
-                      -->
+                      <button class="btn btn-success my-2 mx-2" type="submit">Entrar</button><br/>
                     </form>
-                    <button type="button" href="#">Cadastre-se</a>
+                    <a class="btn btn-success" role="button" href="cadastro.html">Cadastre-se</a>
                   </div>
             </li>
           </ul>           
@@ -96,40 +81,36 @@
     </nav>
     <!--Fim da barra de navegação-->
 
-    <!--Início da barra de navegação que tem a pesquisa-->
+    <!--Início da barra de navegação e pesquisa-->
     <div class="container-navbar-pesquisa my-4 mx-4">
       <nav id="barraPesquisa" class="navbar navbar-dark" style="background-color: #337744">
-        <!--Ícones provisórios, criar-->
         <a class="nav-item">
-          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/frutas.png" alt="">
+          <a class="nav-icone" href="frutas.html"><img class="card-img-top" src="imagens/miniaturas/frutasminiatura.png" alt="">
         </a>
         <a class="nav-item">
-            <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/icone.png" alt="">Verduras
+            <a class="nav-icone" href="hortaliça.html"><img class="card-img-top" src="imagens/miniaturas/verdurasminiatura.png" alt="">
         </a>
         <a class="nav-item">
-          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/icone.png" alt="">Legumes
+          <a class="nav-icone" href="legumes.html"><img class="card-img-top" src="imagens/miniaturas/legumesminiatura.png" alt="">
         </a>
         <a class="nav-item">
-          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/granja.png" alt="">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/miniaturas/graosminiatura.png" alt="">
         </a>
         <a class="nav-item">
-          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/graos.png" alt="">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/miniaturas/temperosminiatura.png" alt="">
         </a>
         <a class="nav-item">
-          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/temperos.png" alt="">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/miniaturas/granjaminiatura.png" alt="">
         </a>
-        <a class="nav-item">
-          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/icone.png" alt="">Flores
-        </a>
+
         <form class="form-inline">
-          <input class="form-control my-2 my-sm-2"type="search" aria-label="Pesquisar">
-          <button class="btn btn-outline-success my-2 mx-2 my-sm-0" type="submit">Pesquisar</button>
-          <!--value placeholder="" aumentar e diminui a barra de pesquisa?-->
+          <input class="form-control my-2 my-sm-2" type="search" aria-label="Pesquisar">
+          <button class="btn btn-success my-2 mx-2 my-sm-2" type="submit">Pesquisar</button>
         </form>
       </nav>
     </div>
-    <!--Fim da barra de navegação que tem a pesquisa-->
-    <!--Início do carrossel-->
+    <!--Fim da barra de navegação e pesquisa-->
+
   <!--Início dos cards-->
   <div class="container">
     <div class="row">
@@ -138,19 +119,17 @@
           <a href="#"><img class="card-img-top" src="imagens/cards/frutas/abacate.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Abacate</a>
+              <a class= "card-title" href="#">Abacate</a>
             </h4>
-            <p class="card-text text-muted">	
+            <p class="card-text text-muted text muted text-muted">	
               Ajuda a hidratar a pele e os cabelos e melhorar a circulação sanguínea,
                por conter gorduras saudáveis como o ômega 3, que atua como antioxidante e melhora o controle do colesterol.
               </p>
-            <h2>R$3.99 Kg</h2>
-            <!--Escolher botões, o primeiro eu copiei de um site, mas ainda não funciona-->
-            <input class="btn btn-success button product-quantity-increement" type="button" value="-" onclick="quantity_dec($(this).parent() )">
-            <input type="text" name="quantity" value="1" size="1" class="product-quantity" style="height: 28px">
-            <input class="btn btn-success button product-quantity-decrement" type="button" value="+" onclick="quantity_inc($(this).parent() )">
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <h2 class="card-price">R$3,99 Kg</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -160,13 +139,15 @@
           <a href="#"><img class="card-img-top" src="imagens/cards/frutas/abacaxi.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Abacaxi</a>
+              <a class= "card-title" href="#">Abacaxi</a>
             </h4>
-            <p class="card-text">São ricas em vitamina C e outros antioxidantes, 
+            <p class="card-text text-muted text muted">São ricas em vitamina C e outros antioxidantes, 
               nutrientes essenciais para garantir a saúde.</p>
-            <h2>R$2.99</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <h2 class="card-price">R$2,99</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -176,14 +157,16 @@
           <a href="#"><img class="card-img-top" src="imagens/cards/frutas/acerola.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Acerola</a>
+              <a class= "card-title" href="#">Acerola</a>
             </h4>
-            <p class="card-text">Por ser extremamente rica em vitamina C, 
+            <p class="card-text text-muted text muted">Por ser extremamente rica em vitamina C, 
               a acerola pode ser usada para prevenir gripes ou resfriados,
                sendo uma ótima aliada da imunidade.</p>
-            <h2>R$2.99</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <h2 class="card-price">R$2,99</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -193,14 +176,16 @@
           <a href="#"><img class="card-img-top" src="imagens/cards/frutas/ameixa.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Ameixa</a>
+              <a class= "card-title" href="#">Ameixa</a>
             </h4>
-            <p class="card-text">É rica em vitaminas como a vitamina C,
+            <p class="card-text text-muted text muted">É rica em vitaminas como a vitamina C,
                A,K e complexo B, fibras solúveis e insolúveis, potássio, cobre, ferro, cálcio e magnésio.
                Apresenta também fito nutrientes com alto poder antioxidante.</p>
-            <h2>R$4.99</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <h2 class="card-price">R$4,99</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -210,14 +195,16 @@
           <a href="#"><img class="card-img-top" src="imagens/cards/frutas/banana.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Banana</a>
+              <a class= "card-title" href="#">Banana</a>
             </h4>
-            <p class="card-text">Por ser rica em vitaminas do complexo B –
+            <p class="card-text text-muted text muted">Por ser rica em vitaminas do complexo B –
                são quatro presentes na banana: B1, B2, B6 e B12 – 
               essa fruta auxilia diretamente o sistema nervoso.</p>
-            <h2>R$2.99</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <h2 class="card-price">R$2,99</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -227,16 +214,18 @@
           <a href="#"><img class="card-img-top" src="imagens/cards/frutas/coco.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Coco</a>
+              <a class= "card-title" href="#">Coco</a>
             </h4>
-            <p class="card-text">Melhora da função intestinal, 
+            <p class="card-text text-muted text muted">Melhora da função intestinal, 
               o  óleo de coco é um excelente hidratante.
                 A farinha de coco é rica em fibras.
                 O leite de coco é nutritivo e não contém lactose.
                 </p>
-            <h2>R$4.99</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <h2 class="card-price">R$4,99</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -246,14 +235,16 @@
           <a href="#"><img class="card-img-top" src="imagens/cards/frutas/goiaba.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Goiaba</a>
+              <a class= "card-title" href="#">Goiaba</a>
             </h4>
-            <p class="card-text">A goiaba ajuda a diminuir a pressão arterial, 
+            <p class="card-text text-muted text muted">A goiaba ajuda a diminuir a pressão arterial, 
               baixar os níveis de triglicerídeos e colesterol LDL (o “colesterol ruim”),
                além de aumentar o “bom colesterol” (HDL).</p>
-            <h2>R$3.99</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <h2 class="card-price">R$3,99</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -263,15 +254,17 @@
           <a href="#"><img class="card-img-top" src="imagens/cards/frutas/kiwi.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Kiwi</a>
+              <a class= "card-title" href="#">Kiwi</a>
             </h4>
-            <p class="card-text"> Ele tem ação antioxidante, baixas calorias, 
+            <p class="card-text text-muted text muted"> Ele tem ação antioxidante, baixas calorias, 
               anticancerígeno,anti-inflamatório,fortalece o sistema imunológico, 
               rico em vitamina C e E 
               ,ajuda na digestão e prisão de ventre, entre outros benefícios.</p>
-            <h2>R$14.99</h2>
-            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-            <button class="botao">Adicionar ao carrinho</button>
+            <h2 class="card-price">R$14,99</h2>
+            <div class="card-buttons">
+              <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+              <button class="botao my-2">Adicionar ao carrinho</button>
+            </div>
           </div>
         </div>
       </div>
@@ -281,14 +274,16 @@
         <a href="#"><img class="card-img-top" src="imagens/cards/frutas/laranja.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">Laranja</a>
+            <a class= "card-title" href="#">Laranja</a>
           </h4>
-          <p class="card-text">Além da famosa vitamina C, a laranja também oferece 
+          <p class="card-text text-muted text muted">Além da famosa vitamina C, a laranja também oferece 
             ácido fólico, cálcio, potássio, magnésio, fósforo e ferro. Contém fibras, 
             pectina e flavonoides, que aumentam seu valor nutritivo.</p>
-          <h2>R$2.99</h2>
-          <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-          <button class="botao">Adicionar ao carrinho</button>
+          <h2 class="card-price">R$2,99</h2>
+          <div class="card-buttons">
+            <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+            <button class="botao my-2">Adicionar ao carrinho</button>
+          </div>
         </div>
       </div>
     </div>
@@ -298,14 +293,16 @@
       <a href="#"><img class="card-img-top" src="imagens/cards/frutas/limao.jpg" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">Limão</a>
+          <a class= "card-title" href="#">Limão</a>
         </h4>
-        <p class="card-text">O limão possui propriedades que ajudam a limpar o corpo, favorecendo o 
+        <p class="card-text text-muted text muted">O limão possui propriedades que ajudam a limpar o corpo, favorecendo o 
           processo digestivo e a absorção de outros nutrientes.
            Esse efeito ainda é capaz de desinchar o corpo.</p>
-        <h2>R$3.99</h2>
-        <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-        <button class="botao">Adicionar ao carrinho</button>
+        <h2 class="card-price">R$3,99</h2>
+        <div class="card-buttons">
+          <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+          <button class="botao my-2">Adicionar ao carrinho</button>
+        </div>
       </div>
     </div>
   </div>
@@ -315,18 +312,19 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/maca.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Maçã</a>
+        <a class= "card-title" href="#">Maçã</a>
       </h4>
-      <p class="card-text">	
+      <p class="card-text text-muted text muted">	
           Ajuda a reduzir o colesterol ruim, tudo isso graças à pectina, 
           um tipo de fibra solúvel encontrada na casca da maçã.
           Ela também evita o envelhecimento precoce, fortalece o sistema imunológico,
            ajuda o sistema digestivo, previne o derrame cerebral, combate à anemia entre outros benefícios.
-          
           </p>
-      <h2>R$2.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$2,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -336,14 +334,16 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/macaverde.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Macã Verde</a>
+        <a class= "card-title" href="#">Macã Verde</a>
       </h4>
-      <p class="card-text">A maçã verde ainda tem ação antiácida, melhorando a 
+      <p class="card-text text-muted text muted">A maçã verde ainda tem ação antiácida, melhorando a 
         digestão e aliviando azias e refluxos; previne o câncer por ter muitos antioxidantes e, 
         por ter muito do mineral fósforo, ainda melhora a sensação de humor.!</p>
-      <h2>R$4.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$4,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -353,18 +353,20 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/mamao.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Mamão</a>
+        <a class= "card-title" href="#">Mamão</a>
       </h4>
-      <p class="card-text">	
+      <p class="card-text text-muted text muted">	
           Melhorar o trânsito intestinal, por ser rico em fibras e em água,
            melhorar a pele e a visão, por ser rico em vitamina A.
           Fortalecer o sistema imunológico, por ter boas quantidades de vitamina auxilia o funcionamento do sistema nervoso,
            por ter vitaminas do complexo B.
           
           !</p>
-      <h2>R$3.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$3,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -374,16 +376,18 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/manga.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Manga</a>
+        <a class= "card-title" href="#">Manga</a>
       </h4>
-      <p class="card-text">	Combate a prisão de ventre porque tem efeito laxante e melhora a digestão, 
+      <p class="card-text text-muted text muted">	Combate a prisão de ventre porque tem efeito laxante e melhora a digestão, 
         também ajuda a controlar a pressão porque tem fibras solúveis e antioxidantes
          que melhoram o funcionamento das artérias.
           	Protege as células e prevenir o câncer porque é rica em antioxidantes.
           </p>
-      <h2>R$4.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$4,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -393,16 +397,18 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/maracuja.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Maracuja</a>
+        <a class= "card-title" href="#">Maracuja</a>
       </h4>
-      <p class="card-text">Fonte abundante das vitaminas A,C e outras do complexo B.
+      <p class="card-text text-muted text muted">Fonte abundante das vitaminas A,C e outras do complexo B.
           	Apresenta boa quantia de sais minerais, entre eles o cálcio,
            ferro, fósforo e sódio.
           É um ótimo calmante natural para o organismo humano.
           </p>
-      <h2>R$4.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$4,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -412,15 +418,17 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/melancia.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Melancia</a>
+        <a class= "card-title" href="#">Melancia</a>
       </h4>
-      <p class="card-text">Ajuda a desinchar: sua ação diurética limpa os rins, 
+      <p class="card-text text-muted text muted">Ajuda a desinchar: sua ação diurética limpa os rins, 
         é ótima para emagrecer: contém poucas calorias sendo uma ótima opção para uma sobremesa saudável.
         Fortalecer as defesas do corpo, porque é uma excelente fonte de vitamina C.
           </p>
-      <h2>R$2.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$2,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -430,14 +438,16 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/melao.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Melão</a>
+        <a class= "card-title" href="#">Melão</a>
       </h4>
-      <p class="card-text">Ajuda a controlar a pressão arterial,
+      <p class="card-text text-muted text muted">Ajuda a controlar a pressão arterial,
          por conter potássio e ser diurético.Preveni doenças, por ter um alto teor de nutrientes antioxidantes, 
         como vitamina A, vitamina C e flavonoides.</p>
-      <h2>R$4.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$4,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -447,15 +457,17 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/morango.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Morango</a>
+        <a class= "card-title" href="#">Morango</a>
       </h4>
-      <p class="card-text">	Ajuda a combater o envelhecimento da pele, 
+      <p class="card-text text-muted text muted">	Ajuda a combater o envelhecimento da pele, 
         a prevenir doenças cardiovasculares; melhorar a capacidade mental.
           	Prevenir o câncer e ajuda a combater inflamações. 
           </p>
-      <h2>R$4.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$4,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -465,13 +477,15 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/pera.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Pera</a>
+        <a class= "card-title" href="#">Pera</a>
       </h4>
-      <p class="card-text">Melhorar a prisão de ventre, facilita a perda de peso e controla a diabetes,
+      <p class="card-text text-muted text muted">Melhorar a prisão de ventre, facilita a perda de peso e controla a diabetes,
          pois é uma fruta rica em fibras e tem baixo índice glicêmico. </p>
-      <h2>R$4.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$4,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -481,15 +495,17 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/pessego.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Pêssego</a>
+        <a class= "card-title" href="#">Pêssego</a>
       </h4>
-      <p class="card-text">Ajudar a emagrecer, por ter poucas calorias
+      <p class="card-text text-muted text muted">Ajudar a emagrecer, por ter poucas calorias
          e aumentar a sensação de saciedade;
         Melhorar o funcionamento do intestino, por conter fibras e bastante água, o que combate a constipação.
           </p>
-      <h2>R$3.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$3,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -499,16 +515,17 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/pitaya.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Pitaya</a>
+        <a class= "card-title" href="#">Pitaya</a>
       </h4>
-      <p class="card-text">
+      <p class="card-text text-muted text muted">
           Proteger as células do organismo, pois é rica em antioxidantes que protegem contra o câncer.
           Ajudar na digestão devido à presença de sementes na polpa.
-          
           </p>
-      <h2>R$6.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$6,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -518,16 +535,17 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/tomate.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Toamate</a>
+        <a class= "card-title" href="#">Tomate</a>
       </h4>
-      <p class="card-text">
+      <p class="card-text text-muted text muted">
           Ajuda a prevenir catarata, pois é rico em vitamina A fundamental para a saúde dos olhos.
           Diminui a retenção de líquidos porque tem propriedades diuréticas.
-          
           </p>
-      <h2>R$2.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$2,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -537,13 +555,15 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/tomatecereja.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Tomate Cereja</a>
+        <a class= "card-title" href="#">Tomate Cereja</a>
       </h4>
-      <p class="card-text">O tomate-cereja possui as mesmas propriedades dos demais tomates, 
+      <p class="card-text text-muted text muted">O tomate-cereja possui as mesmas propriedades dos demais tomates, 
         seu único diferencial está no seu sabor mais adocicado e menos ácido.</p>
-      <h2>R$4.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$4,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
@@ -553,44 +573,53 @@
     <a href="#"><img class="card-img-top" src="imagens/cards/frutas/uvaverde.jpg" alt=""></a>
     <div class="card-body">
       <h4 class="card-title">
-        <a href="#">Uva Verde</a>
+        <a class= "card-title" href="#">Uva Verde</a>
       </h4>
-      <p class="card-text">Melhora a circulação, por ser rica em minerais como ferro e potássio, 
-        que aumentam a oxigenação das células.
+      <p class="card-text text-muted text muted">Melhora a circulação, por ser rica em minerais como ferro e potássio,que aumentam a oxigenação das células.
           Preveni câncer, pois também são ricas em antioxidantes como catequinas e vitamina C.
           </p>
-      <h2>R$7.99</h2>
-      <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
-      <button class="botao">Adicionar ao carrinho</button>
+      <h2 class="card-price">R$7,99</h2>
+      <div class="card-buttons">
+        <input class="form-peso mr-1 my-1" type="number" placeholder="0,000 kg" style="text-align: center;">
+        <button class="botao my-2">Adicionar ao carrinho</button>
+      </div>
     </div>
   </div>
 </div>
 </div>
-
-    <!-- /.row -->  
-  
-  <!-- /.container -->
+</div>
 
 <!-- Footer -->
-<footer class="py-5 navbar-default">
-<div class="container">
-  <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-  <h6 class="m-2 text-white">Formas de Pagamento</h6>
-  <h6 class="mr-2 text-right text-white">Redes sociais e app</h6>
-  <!--Redimensionar as imagens-->
-  <img class="img-cartao ml-2 mr-1" src="imagens/mastercard.png">
-  <img class="img-cartao m-1" src="imagens/visa.png">
-  <img class="img-cartao m-1" src="imagens/elo.png">
-  <img class="img-cartao m-1" src="imagens/americanexpress.png">
-  <img class="img-cartao m-1" src="imagens/dinersclub.jpg">
-  <!--Enviar para a direita esses ícones-->
-  <img class="redesSociais mr-2" src="imagens/appstore2.png">
-  <img class="redesSociais mr-2" src="imagens/playstore.jpg">
-  <img class="redesSociais mr-2" src="imagens/instagram.png">
-  <img class="redesSociais mr-2" src="imagens/facebook.png">
+<footer class="py-5 footer">
+    <div class="container">
+        <p class="m-0 text-center text-white" id="text-footer">Veg e tal &copy; 2019</p>
+        <div class="row my-2">
+            <h6 id="text-footer" class="text-white mr-auto">Formas de Pagamento</h6>
+            <h6 id="text-footer" class="text-white ml-auto">Redes sociais e app</h6>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 mb-4 creditcards">
+                <img class="img-cartao ml-2 mr-1" src="imagens/cartoesredessociais/visa.png">
+                <img class="img-cartao m-1" src="imagens/cartoesredessociais/mastercard.png">
+                <img class="img-cartao m-1" src="imagens/cartoesredessociais/americanexpress.png">
+                <img class="img-cartao m-1" src="imagens/cartoesredessociais/dinersclub.jpg">
+                <img class="img-cartao m-1" src="imagens/cartoesredessociais/elo.png">                
+            </div>
 
-</div>
-<!-- /.container -->
+                
+            <div class="col-lg-3 col-md-6 mb-4 security">
+                <img class="siteblindado" src="imagens/cartoesredessociais/siteblindado.png">
+            </div>   
+
+
+            <div class="col-lg-3 col-md-3 mb-4 socialmedias">
+                <!--Enviar para a direita esses ícones-->
+                <img class="redesSociais mr-2" src="imagens/cartoesredessociais/instagram.png">
+                <img class="redesSociais mr-2" src="imagens/cartoesredessociais/facebook.png">
+                <img class="redesSociais mr-2" src="imagens/instagram.png">
+                <img class="redesSociais mr-2" src="imagens/facebook.png">
+            </div>
+        </div>
 </footer>
 
     <!-- Bootstrap core JavaScript -->

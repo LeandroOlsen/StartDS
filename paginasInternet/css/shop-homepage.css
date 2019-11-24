@@ -5,55 +5,20 @@
  */
 
 body {
-  background-color: #c2ffb3;
+  background-color: #8fbb1c;
 }
 @media (min-width: 992px) {
   body {
   }
 }
-#cormenu{
-  background-color: #11421a;
-}
-.logo{
-  width: 258px;
-  height: 200px;
-}
-.botao{
-  float: right;
-}
-.img-cartao{
-  width: 5%;
-}
-.card-title{
-  color: #4aac63;
-  text-align: center;
-  font-family: cursive;
-  size: 20px;
-}
-.nav-icone{
-  height: 60px;
-  width: 60px;
-}
 .navbar-default {
   background: linear-gradient(to bottom, #4aac63, #337744);
+}
+#navbarcadastro{
   border-radius: 20px;
 }
-.redesSociais{
-  float: right;
-  width: 4%;
-}
-.card-price{
-  text-align: center;
-  font-family: cursive;
-  size: 20px;
-  color: tomato;
-}
-.card-text{
-  font-size: 12px;
-  text-align: center;
-}
-.navbar-brand{
-  width: 30%;
+.brand{
+  width: 25%;
 }
 .container-brand{
   width: 30%;
@@ -61,31 +26,44 @@ body {
 }
 #navbar-site{
   width: 70%;
-  margin: auto;
+}
+.dropdown-item{
+  color: white;
+  text-align: left;
+}
+.dropdown-menu{
+  background: #337744;
+  text-align: center;
+}
+#barraPesquisa{
+  border-radius: 20px;
 }
 .nav-item{
   font-size: 18px;
   font-family: cursive;
-} 
+}
 .nav-icone{
   width: 5%;
 }
-#icons{
-  float: left;
-}
-.dropdown-menu{
-  background: #337744;
-}
-.dropdown-item{
-  color: white;
-}
-.buttons-entrar{
+.card-body{
   text-align: center;
 }
-.container-header{
-  background-image: url(../imagens/novasimagens/3b.jpg);
-  width: 100%;
-  height: 400px;
+.card-title{
+  color: #4aac63;
+  font-family: cursive;
+  font-weight: bold;
+}
+.card-price{
+  font-family: cursive;
+  size: 20px;
+  color: tomato;
+  font-weight: bolder;
+}
+.card-text{
+  font-size: 12px;
+}
+.card-buttons{
+  text-align: center;
 }
 .row-contact{
   font-family: cursive;
@@ -139,12 +117,29 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.footer{
+  background: linear-gradient(to bottom, #4aac63, #337744);
+}
+#text-footer{
+  font-family: cursive;
+}
 .creditcards{
   float: left;
+}
+.img-cartao{
+  width: 10%;
+}
+.security{
+  margin: auto;
+}
+.siteblindado{
+  width: 80%;
 }
 .socialmedias{
   float: right;
 }
-.footer{
-  background: linear-gradient(to bottom, #4aac63, #337744);
+.redesSociais{
+  float: right;
+  width: 10%;
 }
+
