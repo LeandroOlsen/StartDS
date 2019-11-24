@@ -2,7 +2,7 @@
 Projeto TCC Desenvolvimento de Sistemas
 
 Empresa:  
-###**Veg e Tal**###
+**Veg e Tal**
 
 **Autores:**  
 *- Beatriz Letícia Valente Olsen*  

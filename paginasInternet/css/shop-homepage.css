@@ -14,17 +14,6 @@ body {
 #cormenu{
   background-color: #11421a;
 }
-.list-group a{
-  display: ruby-base;
-  background: #11421a;
-  border-left: 10px solid #337744;
-  color: white;
-}
-.list-group a:hover{
-  background: #337744;
-  border-left: 10px solid #11421a;
-  color: black;
-}
 .logo{
   width: 258px;
   height: 200px;
