@@ -122,24 +122,39 @@ body {
 }
 #text-footer{
   font-family: cursive;
+  font-size: 20px;
 }
 .creditcards{
   float: left;
 }
 .img-cartao{
-  width: 10%;
+  width: 20%;
+  text-align: left;
 }
 .security{
   margin: auto;
+  font-family: cursive;
+  color: white;
+  text-align: center;
 }
 .siteblindado{
-  width: 80%;
+  width: 30%;
+}
+.siteblindado2{
+  width: 50%;
 }
 .socialmedias{
   float: right;
 }
 .redesSociais{
-  float: right;
   width: 10%;
+  float: right;
+}
+.redesSociais2{
+  width: 50%;
+  float: right;
+}
+.text-redes-sociais{
+  float: right;
 }
 
