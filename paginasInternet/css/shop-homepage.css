@@ -123,19 +123,23 @@ body {
 #text-footer{
   font-family: cursive;
   font-size: 20px;
+  text-align: center;
 }
 .creditcards{
-  float: left;
+  border: black;
+  border-style: dotted;
+  text-align: center;
 }
 .img-cartao{
   width: 20%;
-  text-align: left;
 }
 .security{
   margin: auto;
   font-family: cursive;
   color: white;
   text-align: center;
+  border: black;
+  border-style: dotted;
 }
 .siteblindado{
   width: 30%;
@@ -144,7 +148,9 @@ body {
   width: 50%;
 }
 .socialmedias{
-  float: right;
+  text-align: center;
+  border: black;
+  border-style: dotted;
 }
 .redesSociais{
   width: 10%;
@@ -152,8 +158,4 @@ body {
 }
 .redesSociais2{
   width: 50%;
-  float: right;
-}
-.text-redes-sociais{
-  float: right;
 }
