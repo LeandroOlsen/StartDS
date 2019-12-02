@@ -29,7 +29,7 @@ body {
 }
 .navbar-nav{
   margin: auto;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 .dropdown-item{
   color: white;
@@ -44,8 +44,8 @@ body {
   border-radius: 20px;
 }
 .nav-item{
-  font-size: 21px;
-  font-family: cursive;
+  font-size: 23px;
+  font-family: 'Pacifico', cursive;
 }
 .nav-icone{
   width: 5%;
@@ -55,11 +55,9 @@ body {
 }
 .card-title{
   color: #4aac63;
-  font-family: cursive;
-  font-weight: bold;
+  font-family: 'Pacifico', cursive;
 }
 .card-price{
-  font-family: cursive;
   size: 20px;
   color: tomato;
   font-weight: bolder;
@@ -125,8 +123,12 @@ body {
 .footer{
   background: linear-gradient(to bottom, #4aac63, #337744);
 }
+.title-footer{
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
 #text-footer{
-  font-family: cursive;
   font-size: 20px;
   text-align: center;
 }
@@ -138,7 +140,6 @@ body {
 }
 .security{
   margin: auto;
-  font-family: cursive;
   color: white;
   text-align: center;
 }
