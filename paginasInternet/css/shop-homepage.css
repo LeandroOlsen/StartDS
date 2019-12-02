@@ -18,14 +18,18 @@ body {
   border-radius: 20px;
 }
 .brand{
-  width: 25%;
+  width: 75%;
 }
 .container-brand{
-  width: 30%;
+  width: 20%;
   padding-left: 20px;
 }
 #navbar-site{
-  width: 70%;
+  width: 80%;
+}
+.navbar-nav{
+  margin: auto;
+  padding-top: 60px;
 }
 .dropdown-item{
   color: white;
@@ -34,12 +38,13 @@ body {
 .dropdown-menu{
   background: #337744;
   text-align: center;
+  margin: auto;
 }
 #barraPesquisa{
   border-radius: 20px;
 }
 .nav-item{
-  font-size: 18px;
+  font-size: 21px;
   font-family: cursive;
 }
 .nav-icone{
@@ -126,8 +131,6 @@ body {
   text-align: center;
 }
 .creditcards{
-  border: black;
-  border-style: dotted;
   text-align: center;
 }
 .img-cartao{
@@ -138,8 +141,6 @@ body {
   font-family: cursive;
   color: white;
   text-align: center;
-  border: black;
-  border-style: dotted;
 }
 .siteblindado{
   width: 30%;
@@ -149,13 +150,7 @@ body {
 }
 .socialmedias{
   text-align: center;
-  border: black;
-  border-style: dotted;
 }
 .redesSociais{
-  width: 10%;
-  float: right;
-}
-.redesSociais2{
   width: 50%;
 }
